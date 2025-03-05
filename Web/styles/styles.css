@@ -1,0 +1,263 @@
+:root{
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --orange: #ffc002;
+    --gray: #f2f2f2;
+    --dark-grey: #111111;
+}
+
+body{
+    margin: 0;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 25px 0;
+}
+
+.intro-container{
+    background-color: var(--gray);
+    position: relative;
+    height: 800px;
+
+}
+
+.intro-container img{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: 1;
+}
+
+.orange-rectangle{
+    background-color: var(--orange);
+    width: 30%;
+    height: 500px;
+    position: absolute;
+    left: 40%;
+    top: 100px;
+    text-align: right;
+    padding: 0 25px 0 100px;
+    color: var(--secondary-color);
+
+}
+
+.orange-rectangle h1{
+    font-size: 50px;
+}
+
+.orange-rectangle p{
+    padding-left: 100px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.our-menu{
+    width: 75%;
+    margin: 50px auto 50px auto;
+}
+
+.our-menu span{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.our-menu h2{
+    font-size: 50px;
+}
+
+.menu-items{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.menu-items h3{
+    color: var(--dark-grey);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.menu-items p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.salads{
+    width: 70%;
+    margin: 200px auto 20px auto;
+}
+
+.salad-items h3{
+    color: var(--dark-grey);
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.salad-items{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.salad-item img{
+    z-index: 1;
+    height: 50%;
+    margin-top: 20px;
+}
+
+.salad-item h4{
+    font-size: 50px;
+    margin: 20px auto auto auto;
+}
+
+
+.salad-item{
+    display: flex;
+    height: 400px;
+    margin-right: 100px;
+}
+
+.musli{
+    background: url("../assets/middle_image.png");
+    background-size: cover;
+    height: 550px;
+    background-position: bottom;
+}
+
+.spaghetti{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 50%;
+    margin: -100px auto 20px auto;
+}
+
+.spaghetti-item h3{
+    color: var(--dark-grey);
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.spaghetti-item{
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.spaghetti-item p{
+    font-weight: lighter;
+}
+
+.salads-and-snacks{
+    display:flex;
+    height: 800px;
+    margin: 100px auto auto 400px
+}
+
+.left-side{
+    width: 30%;
+}
+
+.right-side{
+    width: 60%;
+}
+
+.right-side img{
+    width: 800px;
+}
+
+.left-side h2{
+    font-size: 65px;
+    text-transform: uppercase;
+}
+
+.snack-items{
+    list-style-type: none;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    font-size: 20px;
+    margin-top: 10%;
+    padding: 0;
+}
+
+.orange-line{
+    height: 10px;
+    background-color: var(--orange);
+}
+
+.organic-goodness{
+    background: url("../assets/organic_goodness.jpg");
+    background-size: cover;
+    height: 550px;
+    background-position: 0 -250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.organic-goodness-text{
+    margin: auto;
+    width: 26%; 
+}
+
+.organic-goodness h3{
+    font-weight: 600;
+    font-size: 60px;
+}
+
+#link-text{
+    font-size: 18px;
+    font-weight: 50;
+}
+
+#hyperlink-text{
+    text-decoration: underline solid var(--orange) 9px;
+    color: black;
+}
+
+#hyperink-text:visited{
+    color:black;
+}
+
+.people{
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+.people-image img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 20px solid var(--orange);
+    width: 15%;
+}
+
+.people-name{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: lighter;
+}
+
