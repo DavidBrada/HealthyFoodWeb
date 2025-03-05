@@ -222,20 +222,6 @@ body{
     font-size: 60px;
 }
 
-#link-text{
-    font-size: 18px;
-    font-weight: 50;
-}
-
-#hyperlink-text{
-    text-decoration: underline solid var(--orange) 9px;
-    color: black;
-}
-
-#hyperink-text:visited{
-    color:black;
-}
-
 .people{
     margin: 100px auto 0 auto;
     display: flex;
@@ -261,3 +247,17 @@ body{
     font-weight: lighter;
 }
 
+.subscribe-form{
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    background-color: var(--gray);
+    text-align: center;
+}
+
+#subscribe-form-main-text{
+    font-weight: 900;
+    font-size: 70px;
+}
