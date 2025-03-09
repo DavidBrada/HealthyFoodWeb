@@ -3,7 +3,8 @@
     --secondary-color: #ffffff;
     --orange: #ffc002;
     --gray: #f2f2f2;
-    --dark-grey: #111111;
+    --dark-gray: #111111;
+    --footer-gray: #383434;
 }
 
 body{
@@ -26,39 +27,41 @@ body{
 
 .intro-container{
     background-color: var(--gray);
-    position: relative;
-    height: 800px;
-
+    height: 110vh;
+    width: 100%;
 }
 
 .intro-container img{
+    margin: 100px 0 0 20vw;
     position: absolute;
-    left: 20%;
-    top: 20%;
     z-index: 1;
+    width: 600px;
 }
 
 .orange-rectangle{
     background-color: var(--orange);
-    width: 30%;
-    height: 500px;
-    position: absolute;
-    left: 40%;
-    top: 100px;
-    text-align: right;
-    padding: 0 25px 0 100px;
+    text-align: center;
+    padding: 50px 50px 30px 200px;
     color: var(--secondary-color);
-
+    position: absolute;
+    width: 750px;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: 300px;
+    margin-right: 0;
+    border-radius: 200px;
 }
 
 .orange-rectangle h1{
-    font-size: 50px;
+    font-size: 80px;
+    font-weight: 800;
 }
 
 .orange-rectangle p{
-    padding-left: 100px;
-    font-size: 18px;
+    padding-left: 20%;
+    font-size: 16px;
     line-height: 1.5;
+    text-align: left;
 }
 
 .our-menu{
@@ -76,15 +79,24 @@ body{
 }
 
 .menu-items{
-    width: 95%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    min-width: 650px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.menu-items > div{
+    flex: 1;
+}
+
+.menu-item{
+    flex: 1;
+    min-width: 650px;
+    height: 115px;
 }
 
 .menu-items h3{
-    color: var(--dark-grey);
+    color: var(--dark-gray);
     font-size: 24px;
     font-weight: normal;
 }
@@ -100,33 +112,36 @@ body{
 }
 
 .salad-items h3{
-    color: var(--dark-grey);
+    color: var(--dark-gray);
     font-size: 24px;
     font-weight: normal;
 }
 
 .salad-items{
-    width: 95%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.salad-items > div{
+    flex: 1;
+}
+
+.salad-item{
+    display: flex;
+    height: 400px;
+    min-width: 610px;
 }
 
 .salad-item img{
     z-index: 1;
-    height: 50%;
+    height: 60%;
     margin-top: 20px;
 }
 
 .salad-item h4{
     font-size: 50px;
     margin: 20px auto auto auto;
-}
-
-
-.salad-item{
-    display: flex;
-    height: 400px;
-    margin-right: 100px;
 }
 
 .musli{
@@ -136,49 +151,65 @@ body{
     background-position: bottom;
 }
 
-.spaghetti{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.pasta{
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: -100px auto 200px auto;
+    width: 60%;
+    display: flex;
     gap: 40px;
-    width: 50%;
-    margin: -100px auto 20px auto;
+    flex-wrap: wrap;
 }
 
-.spaghetti-item h3{
-    color: var(--dark-grey);
+.pasta > div{
+    flex: 1;
+}
+
+.pasta-item{
+    flex: 1;
+    min-width: 460px;
+    height: 200px;
+}
+
+.pasta-item h3{
+    color: var(--dark-gray);
     font-size: 20px;
     font-weight: 200;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.spaghetti-item{
+.pasta-item{
     background-color: white;
     padding-left: 30px;
     padding-right: 20px;
     padding-top: 10px;
 }
 
-.spaghetti-item p{
+.pasta-item p{
     font-weight: lighter;
 }
 
 .salads-and-snacks{
     display:flex;
-    height: 800px;
-    margin: 100px auto auto 400px
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 
 .left-side{
-    width: 30%;
+    min-width: 450px;
+    height: 490px;
 }
 
 .right-side{
-    width: 60%;
+    min-width: 600px;
+    max-width: 700px;
+    height: 600px;
 }
-
 .right-side img{
-    width: 800px;
+    width: 100%;
 }
 
 .left-side h2{
@@ -205,6 +236,7 @@ body{
 .organic-goodness{
     background: url("../assets/organic_goodness.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     height: 550px;
     background-position: 0 -250px;
     text-align: center;
@@ -248,16 +280,124 @@ body{
 }
 
 .subscribe-form{
+    background-color: white;
     margin: 100px auto 0 auto;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 600px;
     justify-content: center;
-    background-color: var(--gray);
     text-align: center;
+    border-radius: 50px;
+    padding: 0 50px 50px 50px; 
+}
+
+.form-div{
+    margin-top: 50px;
+    padding: 10px 0 50px 0;
+    width: 100%;
+    background-color: var(--gray);
 }
 
 #subscribe-form-main-text{
     font-weight: 900;
     font-size: 70px;
+    margin: 10px 0 30px 0;
+}
+
+#form-input{
+    height: 40px;
+    border-radius: 20px;
+    border: #ffc002 solid 2px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+#form-button{
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    background-color: #ffc002;
+    border: none;
+}
+
+#twitter-handle{
+    color: #ffc002;
+    text-decoration: underline #ffc002 2px solid;
+}
+
+.footer-div{
+    background-color: var(--footer-gray);
+    height: 200px;
+    text-align: center;
+    padding-top: 90px;
+    color: white;
+}
+
+.prev, .next{
+    cursor: pointer;
+    top: 570%;
+    position: absolute;
+    margin-left: -50px;
+    margin-right: 425px;
+    width: auto;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+ 
+#dot-div{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+@media (min-width: 1700px){
+    .intro-container img{
+        scale: 1;
+    }
+    .orange-rectangle{
+        scale: 1;
+    }
+}
+
+@media (max-width: 1600px){
+    .intro-container{
+        height: 80vh;
+    }
+    .intro-container img{
+        display: block;
+        scale: 1.5;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 450px auto 0 25%;
+    }
+    .orange-rectangle{
+        margin-top: 1000px;
+        margin-left: 10%;
+        width: 85%;
+        padding: 100px 0 0 0;
+    }
+
 }
